@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "0F//PFLFy8A=",
+  "success": true,
+  "projectFilePath": "/home/kennethpabillo/projects/SCPFoundation/SCPFoundation.csproj",
+  "expectedPackageFiles": [
+    "/home/kennethpabillo/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.22/microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512",
+    "/home/kennethpabillo/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.22/microsoft.netcore.app.host.linux-x64.8.0.22.nupkg.sha512"
+  ],
+  "logs": []
+}

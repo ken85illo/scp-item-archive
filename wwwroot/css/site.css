@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow:
+        0 0 0 0.1rem white,
+        0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #0c0d0d;
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar {
+    background-color: rgb(13 13 13 / 0.95);
+    border-bottom: 1px solid rgb(255 255 255 / 0.1);
+}
+
+.navbar a:hover {
+    color: hsl(0, 0%, 80%) !important;
+}
+
+.logo-img {
+    filter: brightness(0) saturate(100%) invert(85%) sepia(3%) saturate(0%)
+        hue-rotate(200deg) brightness(95%) contrast(90%);
+}
+
+.logo-img-darker {
+    filter: brightness(0) saturate(100%) invert(85%) sepia(3%) saturate(0%)
+        hue-rotate(200deg) brightness(55%) contrast(90%);
+}
+
+.jb-mono {
+    font-family: 'JetBrains Mono';
+}
+
+.inter {
+    font-family: 'Inter';
+}
+
+.lb-serif {
+    font-family: 'Libre Baskerville';
+}
+
+.text-grey {
+    color: hsla(240, 4%, 46%, 1);
+}
+
+.text-darkgrey {
+    color: hsla(240, 4%, 26%, 1);
+}
+
+.fs-4 {
+    font-size: 20px !important;
+}
+
+.fs-5 {
+    font-size: 16px !important;
+}
+
+.fs-6 {
+    font-size: 12px !important;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+.fw-bolder {
+    font-weight: 900 !important;
+}
+
+.footer {
+    border-top: 1px solid rgb(255 255 255 / 0.1);
+}
+
+#warning {
+    background-color: hsla(360, 100%, 50%, 5%);
+    padding: 5px 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid hsla(360, 100%, 50%, 20%);
+}
+
+.footer {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+
+    background: url('../assets/foundation-light.png') center / contain no-repeat;
+
+    opacity: 0.025;
+    filter: blur(6px);
+
+    z-index: 1;
+}
+
+.footer > * {
+    z-index: 2;
+}
+
+#restricted-access {
+    width: 300px;
+    position: relative;
+}
+
+#restricted-access div {
+    position: absolute;
+    inset: 0;
+    top: 5px;
+}
+
+#restricted-access span {
+    background-color: #0d0d0d;
+    padding: 0px 10px;
+}
