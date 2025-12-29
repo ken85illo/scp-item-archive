@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SCP Foundation Archive</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SCPFoundation.styles.css" asp-append-version="true" />
+    <script src="~/js/time.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark  navbar-expand-sm navbar-toggleable-sm mb-5">
+            <div class="container-fluid ms-2 me-2">
+                <img class="logo-img" src="~/assets/foundation-dark.svg" style="width: 48px;">
+                <div class="ms-2 me-auto" style="line-height: 16px;">
+                    <a class="navbar-brand jb-mono fw-bold" asp-area="" asp-controller="Home" asp-action="Index">SCP
+                        FOUNDATION</a>
+                    <br>
+                    <span class="inter text-grey fw-bolder" style="font-size: 10px">SECURE, CONTAIN,
+                        PROTECT</span>
+                </div>
+                <div class="vr text-grey"></div>
+                <div class="ms-3 text-end fs-6 text-grey jb-mono fw-bolder">
+                    <div>SCIP-NET OS V4.0</div>
+                    <div id="time"></div>
+                </div>
+                <div class="ms-3 text-end fs-6 text-grey jb-mono fw-bolder">
+                    <div class="text-success">NODE: ST-19-Ω</div>
+                    <div class="text-danger">
+                        ADMINISTRATOR LEVEL
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer text-muted">
+        <div class="container mt-5 mb-5">
+            <div class="row d-flex align-items-center">
+                <div class="col lb-serif me-5">
+                    <img class="logo-img-darker" src="~/assets/foundation-dark.svg" style="width: 40px;">
+                    <span class="text-grey fw-bolder ms-1 fs-4">THE FOUNDATION</span>
+                    <div class="text-wrap fs-6 fst-italic" style="line-height: 20px;">"Humanity must not go
+                        back to
+                        hiding in fear.
+                        No
+                        one else will protect us, and we must stand up for ourselves. While the rest of mankind dwells
+                        in the light, we must stand in the darkness to fight it, contain it, and shield it from the eyes
+                        of the public, so that others may live in a sane and normal world."
+                    </div>
+                </div>
+                <div id="warning" class="col text-danger">
+                    <span class="inter fw-bolder fs-5">Security Warning: L5 Clearance Required</span>
+                    <div class="text-wrap jb-mono fs-6" style="line-height: 20px;">ATTENTION: THE FOLLOWING DATABASE IS
+                        CLASSIFIED AS
+                        TOP SECRET. ACCESS BY UNAUTHORIZED PERSONNEL IS STRICTLY PROHIBITED. FOUNDATION SECURITY SYSTEMS
+                        ARE MONITORING THIS TERMINAL. ATTEMPTED DATA BREACHES WILL BE MET WITH LETHAL COUNTERMEASURES
+                        INCLUDING BUT NOT LIMITED TO: BERRYMAN-LANGFORD MEMETIC KILL AGENTS, REMOTE NEURAL
+                        DISCONNECTION, AND DISCIPLINARY EXPUNGEMENT.</div>
+                </div>
+            </div>
+            <hr class="mt-5">
+            <div class="text-center" style="line-height: 30px;">
+                <span class="inter fst-italic fw-bold fs-6 text-grey">SECURE // CONTAIN // PROTECT</span>
+                <br>
+                <span class="jb-mono fs-6 text-darkgrey">SCP_FOUNDATION_DATABASE_V7_TERMINAL_ID_4192-X</span>
+            </div>
+        </div>
+
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
