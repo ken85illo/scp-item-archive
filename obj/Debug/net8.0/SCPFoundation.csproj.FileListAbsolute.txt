@@ -32,3 +32,4 @@
 /home/kennethpabillo/projects/SCPFoundation/obj/Debug/net8.0/SCPFoundation.genruntimeconfig.cache
 /home/kennethpabillo/projects/SCPFoundation/obj/Debug/net8.0/ref/SCPFoundation.dll
 /home/kennethpabillo/projects/SCPFoundation/bin/Debug/net8.0/Data/scp_data.json
+/home/kennethpabillo/projects/SCPFoundation/obj/Debug/net8.0/SCPFoundation.sourcelink.json
